@@ -4,8 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run fix && jest",
+    "fix": "eslint --format node_modules/eslint-friendly-formatter . --fix"
   },
+  "license": "ISC",
   "author": "mayness",
-  "license": "ISC"
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-egg": "^7.1.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "jest": "^23.6.0"
+  }
 }
