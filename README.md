@@ -2,7 +2,7 @@
 
 filter object tool
 
-# Usage
+## Usage
 
 ```
 const onlyObject = require('only-object');
