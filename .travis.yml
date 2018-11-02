@@ -13,8 +13,24 @@ node_js:
 install:
   - npm i npminstall && npminstall
 
-script:
-  - npm run test
+stages:
+ - test
+ - name: deploy
+
+jobs:
+  include:
+    - stage: test
+      script:
+      - npm run test
+
+    - stage: deploy
+      deploy:
+        provider: npm
+        email: 1095346833@qq.com
+        api_key: "${NPM_TOKEN}"
+        skip_cleanup: true
+      on:
+        branch: master
 
 after_script:
   - npm install codecov && codecov
