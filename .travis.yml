@@ -30,7 +30,7 @@ jobs:
         api_key: "NPM_TOKEN"
         skip_cleanup: true
       on:
-        branch: master
+        all_branches: true
 
 after_script:
   - npm install codecov && codecov
