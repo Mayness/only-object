@@ -22,6 +22,8 @@ jobs:
     - stage: test
       script:
       - npm run test
+      after_script:
+      - npm install codecov && codecov
 
     - stage: deploy
       deploy:
@@ -30,7 +32,4 @@ jobs:
         api_key: "NPM_TOKEN"
         skip_cleanup: true
       on:
-        all_branches: true
-
-after_script:
-  - npm install codecov && codecov
+        branch: master
