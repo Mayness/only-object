@@ -22,7 +22,6 @@ jobs:
     - stage: test
       script:
       - npm run test
-      - npm install codecov && codecov
 
     - stage: deploy
       deploy:
@@ -32,3 +31,6 @@ jobs:
         skip_cleanup: true
         on:
           branch: master
+
+after_script:
+  - npm install codecov && codecov
