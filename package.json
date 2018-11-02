@@ -7,6 +7,15 @@
     "test": "npm run fix && jest",
     "fix": "eslint --format node_modules/eslint-friendly-formatter . --fix"
   },
+  "files": [
+    "util",
+    "index.js"
+  ],
+  "jest": {
+    "verbose": true,
+    "browser": false,
+    "collectCoverage": true,
+  },
   "license": "ISC",
   "author": "mayness",
   "devDependencies": {
@@ -14,5 +23,6 @@
     "eslint-config-egg": "^7.1.0",
     "eslint-friendly-formatter": "^4.0.1",
     "jest": "^23.6.0"
-  }
+  },
+  "dependencies": {}
 }
