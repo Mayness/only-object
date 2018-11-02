@@ -15,14 +15,13 @@ install:
 
 stages:
  - test
- - name: deploy
+ - deploy
 
 jobs:
   include:
     - stage: test
       script:
       - npm run test
-      after_script:
       - npm install codecov && codecov
 
     - stage: deploy
@@ -31,5 +30,5 @@ jobs:
         email: "MY_EMAIL"
         api_key: "NPM_TOKEN"
         skip_cleanup: true
-      on:
-        branch: master
+        on:
+          branch: master
