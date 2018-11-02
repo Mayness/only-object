@@ -20,7 +20,7 @@
     "object",
     "only-object"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "author": "mayness",
   "devDependencies": {
     "eslint": "^5.8.0",
