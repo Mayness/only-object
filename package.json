@@ -13,8 +13,7 @@
   ],
   "jest": {
     "verbose": true,
-    "browser": false,
-    "collectCoverage": true
+    "browser": false
   },
   "keywords": [
     "only",
@@ -29,6 +28,7 @@
     "eslint-friendly-formatter": "^4.0.1",
     "jest": "^23.6.0"
   },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mayness/only-object"
@@ -36,5 +36,7 @@
   "bugs": {
     "url": "https://github.com/Mayness/only-object/issues"
   },
-  "dependencies": {}
+  "publishConfig": {
+    "access": "public"
+  }
 }
