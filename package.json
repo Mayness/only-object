@@ -14,7 +14,7 @@
   "jest": {
     "verbose": true,
     "browser": false,
-    "collectCoverage": true,
+    "collectCoverage": true
   },
   "license": "ISC",
   "author": "mayness",
