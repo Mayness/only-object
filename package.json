@@ -1,7 +1,7 @@
 {
   "name": "only-object",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "filter object tool",
   "main": "index.js",
   "scripts": {
     "test": "npm run fix && jest",
@@ -16,6 +16,11 @@
     "browser": false,
     "collectCoverage": true
   },
+  "keywords": [
+    "only",
+    "object",
+    "only-object"
+  ],
   "license": "ISC",
   "author": "mayness",
   "devDependencies": {
@@ -23,6 +28,13 @@
     "eslint-config-egg": "^7.1.0",
     "eslint-friendly-formatter": "^4.0.1",
     "jest": "^23.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mayness/only-object"
+  },
+  "bugs": {
+    "url": "https://github.com/Mayness/only-object/issues",
   },
   "dependencies": {}
 }
