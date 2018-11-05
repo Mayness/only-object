@@ -20,7 +20,7 @@ after_script:
   - npm install codecov && codecov
 
 stages:
- - deploy
+ - name: deploy
 
 jobs:
   include:
