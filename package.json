@@ -1,6 +1,6 @@
 {
   "name": "only-object",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "filter object tool",
   "main": "index.js",
   "scripts": {

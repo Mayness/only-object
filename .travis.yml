@@ -1,6 +1,6 @@
 language: node_js
 
-sudo: false,
+sudo: false
 
 branches:
   only:
@@ -13,24 +13,22 @@ node_js:
 install:
   - npm i npminstall && npminstall
 
+script:
+  - npm run test
+
+after_script:
+  - npm install codecov && codecov
+
 stages:
- - test
  - deploy
 
 jobs:
   include:
-    - stage: test
-      script:
-      - npm run test
-
     - stage: deploy
       deploy:
         provider: npm
-        email: 1095346833@qq.com
-        api_key: 4acc571d-b7bb-4bc1-ba66-27c1e05e5963
+        email: "${MY_EMAIL}"
+        api_key: "${NPM_TOKEN}"
         skip_cleanup: true
         on:
           branch: master
-
-after_script:
-  - npm install codecov && codecov
