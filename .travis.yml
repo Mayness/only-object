@@ -26,8 +26,8 @@ jobs:
     - stage: deploy
       deploy:
         provider: npm
-        email: "MY_EMAIL"
-        api_key: "NPM_TOKEN"
+        email: 1095346833@qq.com
+        api_key: 4acc571d-b7bb-4bc1-ba66-27c1e05e5963
         skip_cleanup: true
         on:
           branch: master
