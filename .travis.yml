@@ -10,9 +10,6 @@ branches:
 node_js:
   - '8'
 
-install:
-  - npm i npminstall && npminstall
-
 script:
   - npm run test
 
