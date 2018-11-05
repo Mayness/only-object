@@ -1,10 +1,11 @@
 {
   "name": "only-object",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "filter object tool",
   "main": "index.js",
   "scripts": {
     "test": "npm run fix && jest",
+    "coverage": "codecov -f coverage/coverage-final.json",
     "fix": "eslint --format node_modules/eslint-friendly-formatter . --fix"
   },
   "files": [
@@ -13,7 +14,8 @@
   ],
   "jest": {
     "verbose": true,
-    "browser": false
+    "browser": false,
+    "collectCoverage": true
   },
   "keywords": [
     "only",
@@ -23,10 +25,12 @@
   "license": "MIT",
   "author": "mayness",
   "devDependencies": {
+    "codecov": "^3.1.0",
     "eslint": "^5.8.0",
     "eslint-config-egg": "^7.1.0",
     "eslint-friendly-formatter": "^4.0.1",
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "nyc": "^13.1.0"
   },
   "dependencies": {},
   "repository": {

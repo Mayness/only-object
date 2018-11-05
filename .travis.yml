@@ -16,11 +16,11 @@ install:
 script:
   - npm run test
 
-after_script:
+after_success:
   - npm install codecov && codecov
 
 stages:
- - name: deploy
+ - deploy
 
 jobs:
   include:
