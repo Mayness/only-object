@@ -9,6 +9,7 @@ const valid = function(obj, filter) {
   validObj(rules, { obj, filter });
 };
 
+
 /**
  * 过滤指定的key( 得到指定的key )
  * @param {Object} obj 过滤对象
