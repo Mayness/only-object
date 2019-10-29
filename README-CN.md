@@ -1,5 +1,5 @@
 # only-object
-[English](README.md)
+[中文](README-CN.md)
   
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
