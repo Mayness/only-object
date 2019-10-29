@@ -1,6 +1,6 @@
 # only-object
-[English](README.md)  
-
+[中文](README-CN.md)
+  
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![Test coverage][codecov-image]][codecov-url]
@@ -12,7 +12,7 @@
 [codecov-image]: https://img.shields.io/codecov/c/github/Mayness/only-object.svg?style=flat-square
 [codecov-url]: https://codecov.io/github/Mayness/only-object?branch=master
 
-过滤对象的小工具
+filter object tool
 
 ## Usage
 
@@ -27,7 +27,7 @@ const filter = onlyObject.filter(obj, [ 'a', 'c' ]);
 const reduce = onlyObject.reduce(obj, [ 'a', 'c' ]);
 ```
 
-过滤结果:
+filter yields:
 ```
 {
   a: 1,
@@ -36,7 +36,7 @@ const reduce = onlyObject.reduce(obj, [ 'a', 'c' ]);
 ```
 
 
-过滤结果:
+reduce yields:
 ```
 {
   b: '2',
